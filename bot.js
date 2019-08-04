@@ -22,7 +22,9 @@ client.on('message', message => {
 
 });
 
-client.user.setGame('game here !')
+const Discord = require('discord.js');
+const bot = new Discord.Client();
+client.user.setActivity('YouTube', { type: 'WATCHING' });
  
 
 // THIS  MUST  BE  THIS  WAY
